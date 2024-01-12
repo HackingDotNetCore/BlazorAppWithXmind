@@ -8,11 +8,18 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<button class="btn btn-danger" @onclick="DecreaseCount">Decrease</button>
+
 @code {
     private int currentCount = 0;
 
     private void IncrementCount()
     {
         currentCount++;
+    }
+
+    private void DecreaseCount()
+    {
+        currentCount--;
     }
 }
